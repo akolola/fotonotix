@@ -80,9 +80,10 @@
   .showcase .txt{flex:1 1 280px;}
 
   /* Duo (two features side by side) */
-  .duo{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:40px; margin-top:28px;}
-  .feature{text-align:center;}
-  .feature img{width:210px; border-radius:18px; border:1px solid var(--line); box-shadow:0 8px 22px rgba(233,30,140,.12); display:block; margin:0 auto 16px;}
+  .duo{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:40px; margin-top:28px; align-items:stretch;}
+  .feature{display:flex; flex-direction:column; text-align:center;}
+  .feature .shot{flex:1 1 auto; display:flex; align-items:center; justify-content:center; margin-bottom:18px;}
+  .feature .shot img{width:210px; border-radius:18px; border:1px solid var(--line); box-shadow:0 8px 22px rgba(233,30,140,.12); display:block;}
   .feature h3{color:var(--ink); font-size:1.18rem; margin:0 0 6px;}
   .feature p{margin:0 auto; max-width:340px; color:#444;}
 
@@ -266,13 +267,13 @@
       <h2><span class="de">Alles im Blick</span><span class="en">Everything at a glance</span></h2>
       <div class="duo">
         <div class="feature">
-          <img src="images/guide_events.jpg" alt="">
+          <div class="shot"><img src="images/guide_events.jpg" alt=""></div>
           <h3><span class="de">Alle Termine an einem Ort</span><span class="en">All your events in one place</span></h3>
           <p><span class="de">Deine gespeicherten Plakate und Termine bleiben übersichtlich beisammen, mit Name, Datum und Ort auf einen Blick.</span>
              <span class="en">Your saved posters and events stay together, with the name, date and place at a glance.</span></p>
         </div>
         <div class="feature">
-          <img src="images/guide_widget.jpg" alt="">
+          <div class="shot"><img src="images/guide_widget.jpg" alt=""></div>
           <h3><span class="de">Auf dem Startbildschirm</span><span class="en">On your home screen</span></h3>
           <p><span class="de">Behalte deine Termine direkt auf dem Startbildschirm im Blick. Das Widget zeigt den Monat mit deinen gespeicherten Terminen, und der heutige Tag ist hervorgehoben.</span>
              <span class="en">Keep your events in view right on your home screen. The widget shows the month with your saved events, and today is highlighted.</span></p>
