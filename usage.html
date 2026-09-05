@@ -79,6 +79,13 @@
   .showcase img{width:240px; border-radius:18px; border:1px solid var(--line); box-shadow:0 8px 22px rgba(233,30,140,.12);}
   .showcase .txt{flex:1 1 280px;}
 
+  /* Duo (two features side by side) */
+  .duo{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:40px; margin-top:28px;}
+  .feature{text-align:center;}
+  .feature img{width:210px; border-radius:18px; border:1px solid var(--line); box-shadow:0 8px 22px rgba(233,30,140,.12); display:block; margin:0 auto 16px;}
+  .feature h3{color:var(--ink); font-size:1.18rem; margin:0 0 6px;}
+  .feature p{margin:0 auto; max-width:340px; color:#444;}
+
   /* Why */
   .why{list-style:none; padding:0; margin:22px 0 0; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px;}
   .why li{background:var(--cream); border:1px solid var(--line); border-radius:14px; padding:16px 16px 16px 48px; position:relative;}
@@ -256,23 +263,17 @@
 
   <section>
     <div class="wrap">
-      <h2><span class="de">Alle Termine an einem Ort</span><span class="en">All your events in one place</span></h2>
-      <div class="showcase">
-        <img src="images/guide_events.jpg" alt="">
-        <div class="txt">
+      <h2><span class="de">Alles im Blick</span><span class="en">Everything at a glance</span></h2>
+      <div class="duo">
+        <div class="feature">
+          <img src="images/guide_events.jpg" alt="">
+          <h3><span class="de">Alle Termine an einem Ort</span><span class="en">All your events in one place</span></h3>
           <p><span class="de">Deine gespeicherten Plakate und Termine bleiben übersichtlich beisammen, mit Name, Datum und Ort auf einen Blick.</span>
              <span class="en">Your saved posters and events stay together, with the name, date and place at a glance.</span></p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="alt">
-    <div class="wrap">
-      <h2><span class="de">Auf dem Startbildschirm</span><span class="en">On your home screen</span></h2>
-      <div class="showcase">
-        <img src="images/guide_widget.jpg" alt="">
-        <div class="txt">
+        <div class="feature">
+          <img src="images/guide_widget.jpg" alt="">
+          <h3><span class="de">Auf dem Startbildschirm</span><span class="en">On your home screen</span></h3>
           <p><span class="de">Behalte deine Termine direkt auf dem Startbildschirm im Blick. Das Widget zeigt den Monat mit deinen gespeicherten Terminen, und der heutige Tag ist hervorgehoben.</span>
              <span class="en">Keep your events in view right on your home screen. The widget shows the month with your saved events, and today is highlighted.</span></p>
         </div>
@@ -280,7 +281,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="alt">
     <div class="wrap">
       <h2><span class="de">Warum Fotonotix</span><span class="en">Why Fotonotix</span></h2>
       <ul class="why">
