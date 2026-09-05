@@ -45,6 +45,13 @@
   section{padding:44px 0;}
   section.alt{background:#fff;}
 
+  /* Use cases */
+  .lead{margin:14px 0 0; font-size:1.05rem; max-width:760px; color:#444;}
+  .uses{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; margin-top:28px;}
+  .use figure{margin:0;}
+  .use img{width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:16px; border:1px solid var(--line); box-shadow:0 8px 22px rgba(233,30,140,.12); display:block;}
+  .use figcaption{margin-top:10px; font-weight:600; font-size:.98rem; color:var(--ink); text-align:center;}
+
   /* Steps */
   .steps{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; margin-top:26px;}
   .card{background:var(--cream); border:1px solid var(--line); border-radius:16px; padding:16px; text-align:center;}
@@ -98,6 +105,34 @@
 
   <section>
     <div class="wrap">
+      <h2><span class="de">Wofür ist es?</span><span class="en">What is it for?</span></h2>
+      <p class="lead">
+        <span class="de">Veranstaltungshinweise begegnen dir überall — auf Litfaßsäulen, in Prospektständern, auf Flyern und in Magazinen. Fotonotix macht aus jedem dieser Aushänge in Sekunden einen Kalendereintrag.</span>
+        <span class="en">Event announcements are everywhere — on advertising columns, in brochure racks, on flyers and in magazines. Fotonotix turns any of them into a calendar entry in seconds.</span>
+      </p>
+      <div class="uses">
+        <div class="use"><figure>
+          <img src="images/guide_use1.jpg" alt="">
+          <figcaption><span class="de">Litfaßsäulen &amp; Plakatwände</span><span class="en">Advertising columns &amp; poster walls</span></figcaption>
+        </figure></div>
+        <div class="use"><figure>
+          <img src="images/guide_use2.jpg" alt="">
+          <figcaption><span class="de">Prospekt- &amp; Flyerständer</span><span class="en">Brochure &amp; flyer racks</span></figcaption>
+        </figure></div>
+        <div class="use"><figure>
+          <img src="images/guide_use3.jpg" alt="">
+          <figcaption><span class="de">Konzert- &amp; Theaterplakate</span><span class="en">Concert &amp; theatre posters</span></figcaption>
+        </figure></div>
+        <div class="use"><figure>
+          <img src="images/guide_use4.jpg" alt="">
+          <figcaption><span class="de">Flyer, Broschüren &amp; Magazine</span><span class="en">Flyers, brochures &amp; magazines</span></figcaption>
+        </figure></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
       <h2><span class="de">So funktioniert's</span><span class="en">How it works</span></h2>
       <div class="steps">
 
@@ -145,7 +180,7 @@
     </div>
   </section>
 
-  <section class="alt">
+  <section>
     <div class="wrap">
       <h2><span class="de">Alle Termine an einem Ort</span><span class="en">All your events in one place</span></h2>
       <div class="showcase">
@@ -158,7 +193,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="alt">
     <div class="wrap">
       <h2><span class="de">Auf dem Startbildschirm</span><span class="en">On your home screen</span></h2>
       <div class="showcase">
@@ -171,7 +206,7 @@
     </div>
   </section>
 
-  <section class="alt">
+  <section>
     <div class="wrap">
       <h2><span class="de">Warum Fotonotix</span><span class="en">Why Fotonotix</span></h2>
       <ul class="why">
