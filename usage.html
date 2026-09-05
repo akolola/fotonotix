@@ -19,6 +19,20 @@
   .wrap{max-width:960px; margin:0 auto; padding:0 20px;}
   a{color:var(--pink);}
 
+  /* Alpha corner ribbon */
+  .alpha-ribbon{position:fixed; top:0; left:0; width:150px; height:150px; overflow:hidden; z-index:1000; pointer-events:none;}
+  .alpha-ribbon span{
+    position:absolute; left:-54px; top:34px; width:220px; transform:rotate(-45deg);
+    background:#FFD400; color:#111; font-weight:800; letter-spacing:3px; font-size:.9rem;
+    text-align:center; padding:8px 0; text-transform:uppercase;
+    border-top:3px solid #111; border-bottom:3px solid #111;
+    box-shadow:0 3px 10px rgba(0,0,0,.35);
+  }
+  @media (max-width:520px){
+    .alpha-ribbon{width:118px; height:118px;}
+    .alpha-ribbon span{left:-56px; top:26px; width:200px; font-size:.78rem; letter-spacing:2px; padding:6px 0;}
+  }
+
   /* Language switch */
   [data-lang="de"] .en{display:none;}
   [data-lang="en"] .de{display:none;}
@@ -73,9 +87,13 @@
   .why b{color:var(--ink);}
 
   footer{background:var(--pink); color:#fff; text-align:center; padding:28px 20px; font-size:.9rem;}
+  .alpha-note{display:inline-block; margin:0 0 14px; padding:8px 16px; border-radius:20px;
+    background:#FFD400; color:#111; font-weight:700; border:2px solid #111;}
 </style>
 </head>
 <body>
+
+  <div class="alpha-ribbon"><span>Alpha</span></div>
 
   <header class="hero">
     <div class="langswitch">
@@ -235,6 +253,10 @@
   </section>
 
   <footer>
+    <p class="alpha-note">
+      <span class="de">Alpha-Version — die App wird laufend weiterentwickelt und verbessert.</span>
+      <span class="en">Alpha version — the app is actively being developed and improved.</span>
+    </p>
     Fotonotix Event Scheduler · © 2026 Aleksei Kolola
   </footer>
 
