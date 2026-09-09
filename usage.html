@@ -67,8 +67,8 @@
   .use figcaption{margin-top:10px; font-weight:600; font-size:.98rem; color:var(--ink); text-align:center;}
 
   /* Steps */
-  .steps{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; margin-top:26px;}
-  .card{background:var(--cream); border:1px solid var(--line); border-radius:16px; padding:16px; text-align:center;}
+  .steps{display:flex; flex-wrap:wrap; justify-content:center; gap:22px; margin-top:26px;}
+  .card{flex:0 1 240px; background:var(--cream); border:1px solid var(--line); border-radius:16px; padding:16px; text-align:center;}
   .card img{width:100%; max-width:230px; border-radius:12px; border:1px solid var(--line); display:block; margin:0 auto 14px;}
   .badge{display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; border-radius:50%; background:var(--gold); color:#6b4e00; font-weight:700; margin-bottom:8px;}
   .card h3{margin:0 0 4px; font-size:1.1rem; color:var(--ink);}
@@ -213,8 +213,8 @@
           <span class="badge">2</span>
           <img src="images/guide_capture.jpg" alt="">
           <h3><span class="de">Plakat fotografieren</span><span class="en">Snap a poster</span></h3>
-          <p><span class="de">Richte die Kamera auf ein Plakat oder wähle ein Bild aus der Galerie.</span>
-             <span class="en">Point the camera at a poster, or pick one from your gallery.</span></p>
+          <p><span class="de">Richte die Kamera auf ein Plakat.</span>
+             <span class="en">Point the camera at a poster.</span></p>
         </div>
 
         <div class="card">
@@ -236,17 +236,9 @@
         <div class="card">
           <span class="badge">5</span>
           <img src="images/guide_details.jpg" alt="">
-          <h3><span class="de">Details prüfen</span><span class="en">Check the details</span></h3>
-          <p><span class="de">Name, Datum und Ort werden automatisch ausgefüllt. Prüfe und bearbeite bei Bedarf.</span>
-             <span class="en">Name, date and place are filled in automatically. Check and edit if needed.</span></p>
-        </div>
-
-        <div class="card">
-          <span class="badge">6</span>
-          <img src="images/guide_calendar.jpg" alt="">
-          <h3><span class="de">Im Kalender speichern</span><span class="en">Save to your calendar</span></h3>
-          <p><span class="de">Speichere den Termin direkt im Kalender deines Handys oder in der App.</span>
-             <span class="en">Save it straight to your phone's calendar, or keep it in the app.</span></p>
+          <h3><span class="de">Prüfen &amp; speichern</span><span class="en">Check &amp; save</span></h3>
+          <p><span class="de">Name, Datum und Ort werden automatisch ausgefüllt. Prüfe, bearbeite und speichere den Termin.</span>
+             <span class="en">Name, date and place are filled in automatically. Check, edit and save the event.</span></p>
         </div>
 
       </div>
@@ -286,6 +278,12 @@
           <h3><span class="de">Alle Termine an einem Ort</span><span class="en">All your events in one place</span></h3>
           <p><span class="de">Deine gespeicherten Plakate und Termine bleiben übersichtlich beisammen, mit Name, Datum und Ort auf einen Blick.</span>
              <span class="en">Your saved posters and events stay together, with the name, date and place at a glance.</span></p>
+        </div>
+        <div class="feature">
+          <div class="shot"><img src="images/guide_phone_calendar.jpg" alt=""></div>
+          <h3><span class="de">Im Handy-Kalender</span><span class="en">In your phone calendar</span></h3>
+          <p><span class="de">Der Termin landet auch im Kalender deines Handys, mit Datum, Uhrzeit und Ort.</span>
+             <span class="en">The event also lands in your phone's calendar, with date, time and place.</span></p>
         </div>
         <div class="feature">
           <div class="shot"><img src="images/guide_widget.jpg" alt=""></div>
