@@ -82,8 +82,10 @@
   /* Duo (two features side by side) */
   .duo{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:40px; margin-top:28px; align-items:stretch;}
   .feature{display:flex; flex-direction:column; text-align:center;}
-  .feature .shot{flex:0 0 auto; display:flex; align-items:flex-start; justify-content:center; margin-bottom:18px;}
-  .feature .shot img{height:380px; width:auto; max-width:100%; border-radius:18px; border:1px solid var(--line); box-shadow:0 8px 22px rgba(233,30,140,.12); display:block;}
+  .feature .shot{flex:0 0 auto; height:400px; display:flex; align-items:center; justify-content:center; margin-bottom:18px;}
+  .feature .shot img{height:400px; width:auto; max-width:100%; border-radius:18px; border:1px solid var(--line); box-shadow:0 8px 22px rgba(233,30,140,.12); display:block;}
+  /* Cut-out screenshots (widget, phone calendar) are smaller than a full app shot */
+  .feature .shot img.cut{height:300px;}
   .feature h3{color:var(--ink); font-size:1.18rem; margin:0 0 6px;}
   .feature p{margin:0 auto; max-width:340px; color:#444;}
 
@@ -274,7 +276,7 @@
       <h2><span class="de">Alles im Blick</span><span class="en">Everything at a glance</span></h2>
       <div class="duo">
         <div class="feature">
-          <div class="shot"><img src="images/guide_phone_calendar.jpg" alt=""></div>
+          <div class="shot"><img class="cut" src="images/guide_phone_calendar.jpg" alt=""></div>
           <h3><span class="de">Im Handy-Kalender</span><span class="en">In your phone calendar</span></h3>
           <p><span class="de">Der Termin landet auch im Kalender deines Handys, mit Datum, Uhrzeit und Ort.</span>
              <span class="en">The event also lands in your phone's calendar, with date, time and place.</span></p>
@@ -286,7 +288,7 @@
              <span class="en">Your saved posters and events stay together, with the name, date and place at a glance.</span></p>
         </div>
         <div class="feature">
-          <div class="shot"><img src="images/guide_widget.jpg" alt=""></div>
+          <div class="shot"><img class="cut" src="images/guide_widget.jpg" alt=""></div>
           <h3><span class="de">Auf dem Startbildschirm</span><span class="en">On your home screen</span></h3>
           <p><span class="de">Behalte deine Termine direkt auf dem Startbildschirm im Blick. Das Widget zeigt den Monat mit deinen gespeicherten Terminen, und der heutige Tag ist hervorgehoben.</span>
              <span class="en">Keep your events in view right on your home screen. The widget shows the month with your saved events, and today is highlighted.</span></p>
